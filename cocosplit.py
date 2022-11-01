@@ -43,7 +43,11 @@ def main(args):
     with open(args.annotations, 'rt', encoding='UTF-8') as annotations:
         coco = json.load(annotations)
         info = coco['info']
-        licenses = coco['licenses']
+        
+        try:
+          licenses = coco['licenses']
+        except KeyError:
+          licenses = coco['licences']
         images = coco['images']
         annotations = coco['annotations']
         categories = coco['categories']
