@@ -33,7 +33,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  -s SPLIT              A percentage of a split; a number in (0, 1)
+  -s SPLIT              A percentage train data size in the split; a number in (0, 1)
   --having-annotations  Ignore all images without annotations. Keep only these
                         with at least one annotation
   --multi-class         Split a multi-class dataset while preserving class
